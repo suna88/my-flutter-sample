@@ -13,9 +13,22 @@ class MyColumnRowApp extends StatelessWidget {
       home: Container(
         child: Center(
           child: Row(
-            children: <Widget>[
-              Container(color: Colors.lightBlueAccent, width: 100, height: 300,),
-              Container(color: Colors.pinkAccent, width: 100, height: 300,),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Container(color: Colors.lightBlueAccent, width: 100, height: 300,),
+                  Container(color: Colors.pinkAccent, width: 100, height: 300,),
+          ]
+              ),
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(color: Colors.green, width: 100, height: 300,),
+                    Container(color: Colors.yellowAccent, width: 100, height: 300,),
+                  ]
+              ),
             ]
           ),
         )
