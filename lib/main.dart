@@ -2,7 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyColumnRowApp());
+}
+
+class MyColumnRowApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title: 'Column & Row',
+      home: Container(
+        child: Center(
+          child: Row(
+            children: <Widget>[
+              Container(color: Colors.lightBlueAccent, width: 100, height: 300,),
+              Container(color: Colors.pinkAccent, width: 100, height: 300,),
+            ]
+          ),
+        )
+      )
+    );
+  }
 }
 
 class RandomWords extends StatefulWidget {
